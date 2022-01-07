@@ -8,4 +8,3 @@
  */
 
 rootProject.name = "gradle-library-test"
-include("library-test")

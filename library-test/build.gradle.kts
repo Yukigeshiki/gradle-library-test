@@ -20,9 +20,6 @@ repositories {
     mavenCentral()
 }
 
-version = "0.1.2"
-group = "io.robothouse"
-
 dependencies {
     // Align versions of all Kotlin components
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
@@ -42,36 +39,6 @@ dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api("org.apache.commons:commons-math3:3.6.1")
 }
-
-tasks.jar {
-    manifest {
-        attributes(
-            mapOf(
-                "Implementation-Title" to project.name,
-                "Implementation-Version" to project.version
-            )
-        )
-    }
-}
-
-java {
-    withSourcesJar()
-}
-
-//publishing {
-//    publications {
-//        create<MavenPublication>("testLibrary") {
-//            from(components["java"])
-//        }
-//    }
-//
-//    repositories {
-//        maven {
-//            name = "myRepo"
-//            url = uri(layout.buildDirectory.dir("repo"))
-//        }
-//    }
-//}
 
 publishing {
     publications {
