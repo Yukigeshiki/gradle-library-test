@@ -20,7 +20,7 @@ repositories {
     mavenCentral()
 }
 
-version = "0.1.0"
+version = "0.1.2"
 group = "io.robothouse"
 
 dependencies {
@@ -78,7 +78,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "io.robothouse"
             artifactId = "gradle-library-test"
-            version = "0.1.0"
+            version = "0.1.2"
 
             from(components["java"])
         }
