@@ -45,7 +45,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "io.robothouse"
             artifactId = "gradle-library-test"
-            version = "0.1.4"
+            version = "0.1.5"
 
             from(components["java"])
         }
